@@ -1,0 +1,140 @@
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .background {
+            margin: 20px;
+            padding: 20px;
+            border: 1px;
+            background-color: #ffffff;
+        }
+        body {
+            background-color: #dedede;
+        }
+        .header {
+            height: 60px;
+            background-color: #333333;
+        }
+        .header .header_left {
+            float: left;
+        }
+        .header .header_left h1 {
+            display: inline-block;
+        }
+        .header .header_left img {
+            width: 118px;
+            height: 45px;
+            margin: 10px 0px 10px 40px;
+        }
+        .header .header_right {
+            float: right;
+        }
+        .header .header_right ul {
+            margin-top: 5px;
+            margin-right: 15px;
+        }
+        .header .header_right ul li{
+            float: left;
+            list-style: none;
+            padding: 15px;
+        }
+        .header .header_right ul li a {
+            color: #d3d2d5;
+            text-decoration: none;
+        }
+
+        .wzyi {
+            font-size: 20px;
+            color: black;
+            padding: 7px;
+        }
+        .wzer {
+            font-size: 14px;
+            color:#6b6565;
+            padding: 5px;
+        }
+        .author {
+            font-size: 12px;
+            color: #6b6565;
+            padding: 4px;
+        }
+        .nr {
+            text-indent: 2em;
+            padding: 10px
+        }
+        .context img {
+            padding: 10px
+        }
+        .context .wzsan {
+            text-indent: 2em;
+            padding: 10px
+        }
+
+        .two img {
+            padding: 10px;
+        }
+        .two ul {
+            padding-left: 20px;
+        }
+        .two ul>li {
+            list-style: none;
+        }
+
+        .three .pic {
+            border: 1px solid #333;
+            width: 400px;
+            height: 240px;
+            margin: 50px;
+        }
+        .three .pic p {
+            text-align: center;
+        }
+        .three .pic img {
+            margin: 0 auto;
+            display: block;
+        }
+        .four>ol {
+            margin: 10px 0 10px 30px;
+        }
+        .four>ol>li {
+            padding: 5px;
+        }
+
+
+        .five h2 {
+            border-left: 5px solid gray;
+            padding: 8px;
+        }
+        .five .con {
+            margin: 20px 0px 10px 70px;
+        }
+        .five .yaoqiu {
+            margin-left: 130px;
+        }
+        .footer {
+            height: 70px;
+            background-color: black;
+        }
+        .footer p {
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+        }
+        .five .line {
+            width: 300px;
+            height: 30px;
+            margin: 30px 0 20px 200px;
+        }
+        .five .line span {
+            float: left;
+        }
+        .five .line input {
+            display:inline-block;
+            float: right;
+        }
+        .five button {
+            height: 40px;
+            width: 1100px ;
+            margin: 0 auto;
+            display: block;
+        }
