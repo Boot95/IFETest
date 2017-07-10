@@ -218,14 +218,34 @@
 	margin: 0;
 	float: right;
 }
-.three-right .right_pic {
+.three_right .right_pic {
 	background: url("../img/3.png");
 	width: 458px;
 	height: 275px;
+	position: relative;
 }
-
-
-
+.img_cs {
+	width: 458px;
+	height: 61px;
+	background-color: rgba(3, 0, 0, .4);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	line-height: 61px;
+}
+.cs_1 {
+	font:normal 26px "微软雅黑";
+	color: #ffffff;
+	margin-left: 30px;
+	border-left:3px solid #72b16a;
+	padding:4px 10px 5px;
+}
+.cs_2 {
+	font:normal 12px "微软雅黑";
+	color: #72b16a;
+	font-style: italic;
+	word-spacing:140%;
+}
 
 
 
