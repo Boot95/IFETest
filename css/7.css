@@ -100,8 +100,51 @@
     border: 0px solid #000;
 }
 
+.two {
+    height: 249px;
+    background-color: #ffffff;
+}
+.two ul li {
+    margin-top: 50px;
+    width: 278px;
+    box-sizing: border-box;
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+.two ul li:first-child {
+    margin-left: 103px;
+}
+.two ul li:first-child p{
+    border-right: 2px solid #aaaaab;
+}
+.two ul li:nth-child(2) p {
+    border-right: 2px solid #aaaaab;
+}
+.two ul li:last-child {
+    margin-right: 79px;
+}
+.two ul li:last-child p {
+    border-left:2px solid #aaaaab;
+}
 
-
-
-
-
+.three {
+    height: 360px;
+    background-color: #ededed;
+    position: relative;
+}
+.three img {
+    width: 91px;
+    height: 91px;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+}
+.three p {
+    position: absolute;
+    left: 19%;
+    top: 60%;
+    font-size:60px ;
+    color: #9c9c9c;
+    margin-top: 40px;
+}
