@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.page {
+    height: 4554px;
+    background-color: yellow;
+    margin: 0 auto;
+}
+.header {
+    height: 56px;
+    background-color: white;
+}
+.logo {
+    float: left;
+    margin-left: 59px;
+    line-height: 56px;
+}
+.logo img {
+    float: left;
+    margin-top: 8px;
+}
+.logo .logo_text {
+    float: left;
+    margin-left:11px;
+    font-size: 19px;
+    line-height: 56px;
+}
+.right {
+    height: 56px;
+    float: right;
+}
+.right>.login {
+    float: right;
+    line-height: 56px;
+    margin-right: 70px;
+}
+.right>.nav {
+    height: 56px;
+    font:normal 16px "微软雅黑";
+    float: left;
+    line-height: 56px;
+
+}
+.right .nav {
+
+}
+.right .nav li {
+    height: 56px;
+    width: 65px;
+    list-style: none;
+    float: left;
+    margin-right: 40px;
+    text-align: center;
+}
+.right .nav li a {
+    text-decoration: none;
+    color: #7b7a7f;
+}
+.right .nav li:hover {
+    border-bottom: 3px solid #e84f51;
+}
+.right .nav a:hover {
+    color: #e84f51;
+}
+
+.content {
+    height: 4439px;
+    background-color: palegreen;
+}
+.content .one .pic {
+    background-image: url("../img/4.jpg");
+    background-repeat:no-repeat;
+    height: 690px;
+    position: relative;
+}
+.content .one .pic .info {
+    position: absolute;
+    margin: 230px 0 0 116px;
+
+}
+.content .one .pic .info .en {
+    color: #feffff;
+    font-size: 62px;
+    margin-bottom: 15px;
+}
+.content .one .pic .info .chn {
+    font-weight:lighter;
+    color: #feffff;
+    font-size: 28px;
+}
+.content .one .pic .info button{
+    width: 330px;
+    height: 63px;
+    margin-top: 67px;
+    background-color: #e8504f;
+    font: 27px normal;
+    color: #feffff;
+    line-height: 63px;
+    border: 0px solid #000;
+}
+
+
+
+
+
+
