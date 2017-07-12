@@ -138,7 +138,7 @@
     height: 91px;
     position: absolute;
     left: 50%;
-    top: 35%;
+    top: 32%;
 }
 .three p {
     position: absolute;
@@ -148,3 +148,53 @@
     color: #9c9c9c;
     margin-top: 40px;
 }
+
+.four {
+    position: relative;
+    height: 339px;
+    background-image: url("../img/5.jpg");
+    background-repeat:no-repeat;
+    border-top: 1px solid #ffffff;
+}
+.four p {
+    text-align: center;
+    color: #f5eee8;
+}
+.four p:first-child {
+    margin-top: 53px;
+}
+.hx {
+    margin-top: 10px;
+    position: absolute;
+    left: 661px;
+    width: 30px;
+    border-bottom: 2px solid #fffeff;
+}
+.hd {
+    margin-top: 20px;
+}
+.four select {
+    width: 234px;
+    height: 35px;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+#country {
+    margin-left: 125px;
+}
+.four button {
+    width: 235px;
+    height: 35px;
+    margin-left: 29px;
+    background-color: #be4e48;
+    border: 0px solid #000;
+}
+
+
+
+
+
+
+
+
+
