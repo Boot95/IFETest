@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务四：基础JavaScript练习（一）</title>
+    <style>
+        li{
+            display:inline-block;
+            background-color: #cd4a48;
+            color: #f3f6f7;
+            font-size:20px;
+            text-align:center;
+            padding:5px;
+            margin:5px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="inNum" name="number">
+<button id="btnLeftIn">左侧入</button>
+<button id="btnRightIn">右侧入</button>
+<button id="btnLeftOut">左侧出</button>
+<button id="btnRightOut">右侧出</button>
+<!--数字队列-->
+<ul id="outNum"></ul>
+    <script>
+       var inNum = document.getElementById("inNum"),
+           outNum = document.getElementById("outNum"),
+            btnLeftIn = document.getElementById("btnLeftIn"),
+            btnRightIn = document.getElementById("btnRightIn"),
+            btnLeftOut = document.getElementById("btnLeftOut"),
+            btnRightOut = document.getElementById("btnRightOut");
+        function insert(dir) {
+            if(inNum.value == "") {
+                alert("请输入有效的数字。");          //当输入框为空时，点击按钮，弹出提示
+                inNum.focus();
+            }else if (isNaN(inNum.value)) {
+                alert("只能输入数字，不能输入其他字符。")    // 输入框为非数字时间，将显示提示。
+                inNum.value = "";
+                inNum.focus();
+            }else {
+                var oli = document.createElement("li");
+                oli.innerText = inNum.value;
+                if(dir === "left") {
+                    outNum.insertBefore(oli,outNum.firstChild);    //若点击的是“left”，则将生成的数值插入到第一个子元素的位置。
+                    inNum.value = "";
+                }else if (dir === "right") {
+                    outNum.appendChild(oli);                        //若点击的是“right”，则将生成的数值添加到最后一个元素的位置。
+                    inNum.value = "";
+                }
+            }
+        }
+        function remove(node, dir) {
+            if(outNum.childNodes.length <= 0 ) {
+                alert("不存在元素，所以无法删除。")   // 判断ul内是否含有元素
+            }else {
+                if(dir === "left") {
+                    alert("删除数字："+outNum.firstChild.innerText+"!");
+                    outNum.removeChild(outNum.firstChild);
+                }else if(dir === "right" ) {
+                    alert("删除数字："+outNum.lastChild.innerText+"!");
+                    outNum.removeChild(outNum.lastChild);
+                }else {
+                    alert("删除数字"+outNum.removeChild(node).innerText+"!");
+                }
+            }
+        }
+        btnLeftIn.onclick = function () {
+            insert("left");
+        }
+        btnRightIn.onclick = function () {
+            insert("right");
+        }
+        btnLeftOut.onclick = function () {
+            remove(-1,"left");
+        }
+        btnRightOut.onclick = function () {
+            remove(-1,"right");
+        }
+        outNum.onclick = function () {
+            remove(event.target);
+        }
+    </script>
+
+</body>
+</html>
