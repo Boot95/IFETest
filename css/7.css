@@ -4,7 +4,7 @@
 }
 .page {
     height: 4554px;
-    background-color: yellow;
+    /*background-color: yellow;*/
     margin: 0 auto;
 }
 .header {
@@ -66,13 +66,13 @@
 
 .content {
     height: 4439px;
-    background-color: palegreen;
+    /*background-color: palegreen;*/
+    position: relative;
 }
 .content .one .pic {
-    background-image: url("../img/4.jpg");
+    background-image: url("../img/5.jpg");
     background-repeat:no-repeat;
     height: 690px;
-    position: relative;
 }
 .content .one .pic .info {
     position: absolute;
@@ -100,32 +100,36 @@
     border: 0px solid #000;
 }
 
-.two {
-    height: 249px;
-    background-color: #ffffff;
+.secord-part{
+    height: 250px;
+    font-size: 0;
 }
-.two ul li {
-    margin-top: 50px;
-    width: 278px;
-    box-sizing: border-box;
-    float: left;
-    list-style: none;
+.secord-part .sec-intro {
+    width: 25%;
+    height: 170px;
+    display: inline-block;
     text-align: center;
 }
-.two ul li:first-child {
-    margin-left: 103px;
+.secord-part .sec-intro img{
+    display: block;
+    margin: 40px auto;
 }
-.two ul li:first-child p{
-    border-right: 2px solid #aaaaab;
+.secord-part .sec-intro figcaption .detail{
+    text-align: center;
+    font-size: 14px;
+    color: #8d8d8d;
+    width: 100%;
+    height: 51px;
+    border-right: 1px solid #8d8d8d;
+    cursor: pointer;
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
 }
-.two ul li:nth-child(2) p {
-    border-right: 2px solid #aaaaab;
+.secord-part .sec-intro figcaption .detail:hover{
+    color: #e74f4d;
 }
-.two ul li:last-child {
-    margin-right: 79px;
-}
-.two ul li:last-child p {
-    border-left:2px solid #aaaaab;
+.secord-part .sec-intro:last-child .detail{
+    border: none;
 }
 
 .three {
@@ -141,8 +145,9 @@
     top: 32%;
 }
 .three p {
+    width: 100%;
     position: absolute;
-    left: 19%;
+    text-align: center;
     top: 60%;
     font-size:60px ;
     color: #9c9c9c;
@@ -155,6 +160,7 @@
     background-image: url("../img/5.jpg");
     background-repeat:no-repeat;
     border-top: 1px solid #ffffff;
+    text-align: center;
 }
 .four p {
     text-align: center;
@@ -163,15 +169,14 @@
 .four p:first-child {
     margin-top: 53px;
 }
-.hx {
-    margin-top: 10px;
-    position: absolute;
-    left: 661px;
+.four span {
+    color: #FFFFFF;
+    display: inline-block;
     width: 30px;
-    border-bottom: 2px solid #fffeff;
-}
-.hd {
-    margin-top: 20px;
+    height: 5px;
+    border-top: 2px solid #FFFFFF;
+    transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out
 }
 .four select {
     width: 234px;
@@ -190,44 +195,189 @@
     border: 0px solid #000;
 }
 
-.five {
-    height: 604px;
+.fifth-part{
     background-color: #f7f7f7;
+    height: 605px;
+    position: relative;
 }
-.five>div {
-    width: 219px;
-    height: 338px;
-    border: 1px solid #e0e0e0;
+.fifth-part .box{
+    height: 400px;
+    width: 988px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.fifth-part .box figure{
+    display: inline-block;
+    text-align: center;
+    padding-right: 36px;
+}
+.fifth-part .box  figure:last-child{
+    padding-right: 0px;
+}
+.fifth-part .box  figure img{
+    border: 1px solid #e1e1e1;
+    padding: 10px 5px;
+    background-color: #FFFFFF;
+}
+.fifth-part .box  .pic-place{
+    color: #323333;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.fifth-part .box  .pic-title{
+    font-size: 12px;
+    color: #9f9f9f;
+    margin: 5px 0;
+
+}
+.fifth-part .box  .place-em{
+    letter-spacing: 38px;
+    font-size: 19px;
+    margin-right: -37px;
+}
+
+.six {
+    height: 1087px;
+    /*background-color: orchid;*/
+}
+.six_top {
+    height: 566px;
+}
+.six_top .six_top_left {
+    width: 66.6%;
+    height: 100%;
+    background: url("../img/sixPart-pic.jpg") no-repeat;
+    display: inline-block;
+    background-size:cover;
+    position: relative;
+}
+.six_top .six_top_left .tittle {
+    position: absolute;
+    top: 17%;
+    left: 44%;
+    margin:0 -200px ;
+    text-align: center;
+    color: #ffffff;
+}
+.para-1 {
+    font-size: 47px;
+}
+.para-2 {
+    font-size: 160px;
+}
+.l-triangle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-right: 30px solid #FFFFFF;
+}
+.six_top .six_top_right {
+    width: 33.4%;
+    height: 100%;
+    background-color: #ffffff;
+    display: inline-block;
+    float: right;
+    text-align: center;
+}
+.six_top .six_top_right .art-1 header{
+    font-size: 22px;
+    padding-top: 157px;
+}
+.six_top .six_top_right .art-1 span {
+    color: #e74f4d;
+}
+.six_top .six_top_right .art-1 p {
+    width: 292px;
+    line-height: 25px;
+    color: #aaaaa9;
+    font-size: 14px;
+    text-align: left;
+    margin: 30px auto;
+    padding-bottom: 30px;
+}
+.six_top .six_top_right a {
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #e74f4d;
+    border: 1px solid #e74f4d;
+}
+.six_but {
+    height: 520px;
+}
+.six_but div {
+    display: inline-block;
+}
+.six_but .six_but_left {
+    text-align: center;
     float: left;
+    width: 33.3%;
+    height: 520px;
+    background-color: #e74f4d;
 }
-.five img {
-    width: 201px;
-    height: 312px;
-    margin: 12px 8px;
+.six_but .six_but_left span{
+    border-top: 2px solid #FFFFFF;
 }
-.five_one {
-    margin: 100px 0 0 148px;
+.six_but .six_but_left a{
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
 }
-.five_one p {
+.para {
+    margin-top: 163px;
+    line-height: 30px;
+}
+.six_but .six_but_center {
     text-align: center;
+    float: left;
+    width: 33.3%;
+    height: 520px;
+    color: #e74f4d;
+    background-color: #FFFFFF;
 }
-.five_two {
-    margin: 100px 0 0 36px;
+.six_but .six_but_right {
+    width: 33.3%;
+    height: 100%;
+    background: url("../img/sevenPart-pic.jpg") no-repeat;
+    float: right;
+    -webkit-background-size:cover;
+    background-size:cover;
+    position: relative;
 }
-.five_two p {
-    text-align: center;
+.six_but .six_but_right .r-triangle{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border-color: transparent transparent transparent #FFFFFF;
+    border-style:solid;
+    border-width: 20px 0 20px 30px;
+    width: 0;
+    height: 0;
 }
-.five_three {
-    margin: 100px 0 0 36px;
-}
-.five_three p {
-    text-align: center;
-}
-.five_four {
-    margin: 100px 0 0 36px;
-}
-.five_four p {
-    text-align: center;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

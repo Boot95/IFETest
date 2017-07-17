@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>表单验证</title>
+
 </head>
 <body>
-
+<form action="#">
+    <label for="name">用户名：</label>
+    <input type="text" id="name">
+    <button class="yz">验证</button>
+</form>
+<script>
+    window.onload = function() {
+        var ip = document.getElementById("name"),
+            form = document.getElementsByTagName("form");
+        ip.onclick =function () {
+            var p = document.createElement("p"),
+                text =document.createTextNode("必填，字符位数4-16位");
+            p.innerText = text;
+            form.appendChild(p);
+        }
+    }
+</script>
 </body>
 </html>
